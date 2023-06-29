@@ -24,5 +24,12 @@ namespace R5T.Z0046
         ///     2. A statement calling into the CliWrap NuGet package.
         /// </summary>
         public IProjectFilePath Example_SimpleWithNuGetPackageReference => @"C:\Code\DEV\Git\GitHub\SafetyCone\R5T.S0060\source\R5T.S0060.S002\R5T.S0060.S002.csproj".ToProjectFilePath();
+
+        /// <summary>
+        /// <para>C:\Code\DEV\Git\GitHub\SafetyCone\R5T.S0060\source\R5T.S0060.S003\R5T.S0060.S003.csproj</para>
+        /// Contains a Program class, with Main() method, with several statements.
+        /// But, most importantly, contains a project reference to a NuGet package selector project.
+        /// </summary>
+        public IProjectFilePath Example_SimpleWithNuGetPackageProviderProjectReference => @"C:\Code\DEV\Git\GitHub\SafetyCone\R5T.S0060\source\R5T.S0060.S003\R5T.S0060.S003.csproj".ToProjectFilePath();
     }
 }

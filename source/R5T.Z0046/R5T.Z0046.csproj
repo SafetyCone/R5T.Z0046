@@ -3,7 +3,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Version>1.0.0</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>1591</NoWarn>
+    <NoWarn>1587;1591</NoWarn>
     <Authors>DCoats</Authors>
     <Company>Rivet</Company>
     <Copyright>Copyright (c) Rivet 2023</Copyright>
@@ -19,5 +19,6 @@
     <ProjectReference Include="..\..\..\R5T.T0187\source\R5T.T0187\R5T.T0187.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0196\source\R5T.T0196\R5T.T0196.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0197\source\R5T.T0197\R5T.T0197.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0200\source\R5T.T0200\R5T.T0200.csproj" />
   </ItemGroup>
 </Project>
