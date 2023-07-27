@@ -29,6 +29,12 @@ namespace R5T.Z0046
         public IProjectFilePath Example_ProjectFilePath => @"C:\Temp\Projects\Example\Example.csproj".ToProjectFilePath();
 
         /// <summary>
+        /// Example real, actually existing, project file path for use as a reference. (input)
+        /// <para>C:\Code\DEV\Git\GitHub\SafetyCone\R5T.Z0046\source\R5T.Z0046\R5T.Z0046.csproj</para>
+        /// </summary>
+        public IProjectFilePath Example_RealProjectFilePath => @"C:\Code\DEV\Git\GitHub\SafetyCone\R5T.Z0046\source\R5T.Z0046\R5T.Z0046.csproj".ToProjectFilePath();
+
+        /// <summary>
         /// Example project file path for use as a reference. (input)
         /// <para>C:\Code\DEV\Git\GitHub\SafetyCone\R5T.E0001.Private\source\R5T.E0001\R5T.E0001.csproj</para>
         /// </summary>
