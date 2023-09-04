@@ -4,6 +4,7 @@ using R5T.T0172;
 using R5T.T0172.Extensions;
 using R5T.T0180;
 using R5T.T0180.Extensions;
+using R5T.T0181;
 
 
 /// Examples are for input!
@@ -13,6 +14,32 @@ namespace R5T.Z0046
 {
     public partial interface IFilePaths
     {
+#pragma warning disable IDE1006 // Naming Styles
+        private static L0057.IFilePaths _Foundation => L0057.FilePaths.Instance;
+#pragma warning restore IDE1006 // Naming Styles
+
+
+        /// <summary>
+        /// <para>[the path of the currently executing executable file]</para>
+        /// The file path for the currently executing executable file is a perfect example file path:
+        /// <list type="number">
+        /// <item>It is guaranteed to exist if code is running.</item>
+        /// <item>It is almost always a complex path, with multiple diretory levesl.</item>
+        /// <item>Its filename almost always has an extension.</item>
+        /// </list>
+        /// </summary>
+        public IFilePath Example => _Foundation.Executable;
+
+        /// <summary>
+        /// An example DLL file path (that is guaranteed to exist).
+        /// </summary>
+        public IDllFilePath Example_Dll => _Foundation.Executable;
+
+        /// <summary>
+        /// An example assembly file path (that is guaranteed to exist).
+        /// </summary>
+        public IAssemblyFilePath Example_Assembly => _Foundation.Executable;
+
         /// <summary>
         /// C:\Code\DEV\Git\GitHub\SafetyCone\R5T.Z0046\source\R5T.Z0046\Code\Values\IFilePaths.cs
         /// </summary>
