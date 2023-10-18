@@ -37,6 +37,7 @@ namespace R5T.Z0046
 
         /// <summary>
         /// An example assembly file path (that is guaranteed to exist).
+        /// (This returns the path of the currently executing executable assembly.)
         /// </summary>
         public IAssemblyFilePath Example_Assembly => _Foundation.Executable;
 
