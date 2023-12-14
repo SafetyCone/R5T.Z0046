@@ -13,6 +13,11 @@ namespace R5T.Z0046
 {
     public partial interface IFilePaths
     {
+#pragma warning disable IDE1006 // Naming Styles
+        public Platform.IFilePaths _Platform => Platform.FilePaths.Instance;
+#pragma warning restore IDE1006 // Naming Styles
+
+
         /// <summary>
         /// C:\Temp\Sample.css
         /// </summary>
@@ -43,11 +48,8 @@ namespace R5T.Z0046
         /// </summary>
         public IMarkdownFilePath Sample_MarkdownFilePath => @"C:\Temp\Sample.md".ToMarkdownFilePath();
 
-        /// <summary>
-        /// Sample project file path for generating project files. (output)
-        /// <para>C:\Temp\Sample.csproj</para>
-        /// </summary>
-        public IProjectFilePath Sample_ProjectFilePath => @"C:\Temp\Sample.csproj".ToProjectFilePath();
+        /// <inheritdoc cref="Platform.IFilePaths.Sample_ProjectFilePath"/>
+        public IProjectFilePath Sample_ProjectFilePath => _Platform.Sample_ProjectFilePath.ToProjectFilePath();
 
         /// <summary>
         /// Sample project file path for outputing data to a project file unmodified. (output)
