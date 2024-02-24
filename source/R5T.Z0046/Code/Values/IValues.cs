@@ -40,6 +40,9 @@ namespace R5T.Z0046
         /// </summary>
         public string Sample_PageTitle => "Sample Page";
 
+        /// <summary>
+        /// <para><value>Sample project description.</value></para>
+        /// </summary>
         public IProjectDescription Sample_ProjectDescription => "Sample project description.".ToProjectDescription();
 
         /// <summary>
